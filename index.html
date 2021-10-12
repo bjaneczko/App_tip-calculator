@@ -21,17 +21,41 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
-      <h1></h1>
-    </header>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <main>
+      <header class="header margin-bottom-large">
+        <h1 class="header__title">SPLI<br />TTER</h1>
+      </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+      person Total / person Reset -->
+      <section class="calculator margin-bottom-large">
+        <div class="left-side">
+          <p>Bill</p>
+          <input type="text" />
+          <p>Select tip %</p>
+          <div class="tips">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </div>
+          <p>Number of people</p>
+          <input type="text" />
+        </div>
+        <div class="right-side">
+          <div class="tips-display"></div>
+          <button class="reset-btn">RESET</button>
+        </div>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
   </body>
 </html>

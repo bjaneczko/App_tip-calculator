@@ -20,11 +20,75 @@ body {
   color: #00494d;
 }
 
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-size: 24px;
+  text-align: center;
+  color: #5e7a7d;
+  letter-spacing: 7px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: #3e52a3;
+}
+
+.margin-bottom-large {
+  margin-bottom: 30px;
+}
+
+.calculator {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 80rem;
+  height: 40rem;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.left-side {
+  background-color: white;
+  width: 50%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right-side {
+  background-color: #00494d;
+  width: 50%;
+  margin: 30px 30px 30px 0;
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */
