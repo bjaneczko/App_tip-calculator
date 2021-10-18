@@ -38,18 +38,25 @@ body {
           align-items: center;
 }
 
-.header__title {
-  font-size: 24px;
-  color: #00494d;
-  letter-spacing: 7px;
-}
-
-.input--label {
+.text {
   font-family: "Space Mono", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #00494d;
+  color: #5e7a7d;
+}
+.text--white {
+  color: white;
+}
+.text--small {
+  font-size: 16px;
+}
+
+.text2 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #26c0ab;
 }
 
 .attribution {
@@ -60,13 +67,25 @@ body {
   color: #3e52a3;
 }
 
+.margin-bottom-small {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-small2 {
+  margin-bottom: 30px;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 40px;
+}
+
 .margin-bottom-large {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .calculator {
   background-color: white;
-  min-width: 50vw;
+  min-width: 77vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,8 +95,8 @@ body {
 
 .left-side {
   background-color: white;
-  width: 50%;
-  padding: 45px;
+  width: 53%;
+  padding: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,12 +120,12 @@ body {
 .input {
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   color: #00494d;
   text-align: right;
   border: none;
   background-color: #f4fafa;
-  padding: 3px 15px;
+  padding: 10px 15px;
   border-radius: 4px;
   z-index: 5;
 }
@@ -131,15 +150,32 @@ body {
 
 .right-side {
   background-color: #00494d;
-  width: 50%;
-  margin: 30px 30px 30px 0;
+  width: 47%;
+  margin: 40px 40px 40px 0px;
+  padding: 50px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tips {
   max-width: 100%;
   display: grid;
-  gap: 13px;
+  gap: 16px;
   grid-template-columns: 1fr 1fr 32%;
 }
 
@@ -150,21 +186,84 @@ body {
   z-index: 10;
 }
 
+.icon2 {
+  margin-right: 10px;
+  height: 40px;
+  fill: red !important;
+}
+
+.result {
+  color: white;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.result__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reset-btn {
+  width: 80%;
+}
+
 .btn {
   font-family: "Space Mono", sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  color: white;
   border: none;
+  border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn--tip {
+  font-size: 28px;
+  color: white;
   background-color: #00494d;
-  border-radius: 4px;
-  padding: 4px;
+  padding: 10px;
+  width: 100%;
+}
+.btn--reset {
+  font-size: 24px;
+  color: #00494d;
+  background-color: #0c686d;
+  padding: 10px;
+  width: 100%;
+}
+.btn--reset:hover, .btn--reset:focus {
+  background-color: #26c0ab;
+}
+.btn:hover, .btn:focus {
+  background-color: #26c0ab;
 }
 
 .custom {
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   text-align: right;
   color: #00494d;
   padding: 4px;
@@ -173,23 +272,23 @@ body {
   border-radius: 8px;
 }
 .custom::-webkit-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
   text-align: center;
 }
 .custom::-moz-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
   text-align: center;
 }
 .custom:-ms-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
   text-align: center;
 }
 .custom::-ms-input-placeholder {
-  color: #00494d;
+  color: #5e7a7d;
   text-align: center;
 }
 .custom::placeholder {
-  color: #00494d;
+  color: #5e7a7d;
   text-align: center;
 }
 .custom:focus {

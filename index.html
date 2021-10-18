@@ -27,38 +27,60 @@
       <img src="images/logo.svg" alt="Logo" class="margin-bottom-large" />
       <main class="calculator margin-bottom-large">
         <div class="left-side">
-          <div class="input-container">
-            <label class="input--label" for="bill">Bill</label>
+          <div class="input-container margin-bottom-medium">
+            <label class="text" for="bill">Bill</label>
             <img src="images/icon-dollar.svg" class="icon" alt="" />
             <input name="bill" class="input" type="text" placeholder="0" />
           </div>
 
-          <p class="input--label">Select tip %</p>
-          <div class="tips">
-            <button class="btn">5%</button>
-            <button class="btn">10%</button>
-            <button class="btn">15%</button>
-            <button class="btn">20%</button>
-            <button class="btn">25%</button>
+          <p class="text margin-bottom-small">Select tip %</p>
+          <div class="tips margin-bottom-medium">
+            <button class="btn btn--tip">5%</button>
+            <button class="btn btn--tip">10%</button>
+            <button class="btn btn--tip">15%</button>
+            <button class="btn btn--tip">25%</button>
+            <button class="btn btn--tip">50%</button>
             <input type="text" class="custom" placeholder="Custom" />
           </div>
           <div class="input-container">
-            <label class="input--label" for="people">Number of People</label>
+            <label class="text" for="people">Number of People</label>
             <img src="images/icon-person.svg" class="icon" alt="" />
             <input name="people" class="input" type="text" placeholder="0" />
           </div>
         </div>
         <div class="right-side">
-          <div class="tips-display"></div>
-          <button class="reset-btn">RESET</button>
+          <div class="result">
+            <div class="result__amount margin-bottom-small">
+              <p class="text text--white">
+                Tip Amount
+                <br />
+                <span class="text text--small">/ person</span>
+              </p>
+              <div class="number">
+                <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
+                <p class="text2">$0.00</p>
+              </div>
+            </div>
+            <div class="result__amount">
+              <p class="text text--white">
+                Total
+                <br />
+                <span class="text text--small">/ person</span>
+              </p>
+              <div class="number">
+                <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
+                <p class="text2">$0.00</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--reset">RESET</button>
         </div>
       </main>
-
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Bartłomiej Janeczko</a>.
       </div>
     </div>
   </body>
