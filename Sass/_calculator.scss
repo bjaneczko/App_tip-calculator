@@ -1,0 +1,149 @@
+.calculator {
+  background-color: $white;
+  min-width: 77vw;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.left-side {
+  background-color: $white;
+  width: 53%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: $cyan-very-dark;
+  text-align: right;
+  border: none;
+  background-color: $cyan-light-grayish2;
+  padding: 10px 15px;
+  border-radius: 4px;
+  z-index: 5;
+  &::placeholder {
+    color: $cyan-dark-grayish2;
+  }
+
+  &:focus {
+    outline-color: $cyan-strong;
+  }
+}
+
+.right-side {
+  background-color: $cyan-very-dark;
+  width: 47%;
+  margin: 40px 40px 40px 0px;
+  padding: 50px;
+  //   margin: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tips {
+  max-width: 100%;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 32%;
+}
+
+.icon {
+  position: absolute;
+  left: 15px;
+  top: 42px;
+  z-index: 10;
+}
+
+.icon2 {
+  margin-right: 10px;
+  height: 40px;
+  fill: red !important;
+}
+
+.result {
+  color: $white;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.number {
+  display: flex;
+  align-items: flex-start;
+}
+
+.reset-btn {
+  width: 80%;
+}
+.btn {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+
+  &--tip {
+    font-size: 28px;
+    color: $white;
+    background-color: $cyan-very-dark;
+    padding: 10px;
+    width: 100%;
+  }
+
+  &--reset {
+    font-size: 24px;
+    color: $cyan-very-dark;
+    background-color: #0c686d;
+    padding: 10px;
+    width: 100%;
+    &:hover,
+    &:focus {
+      background-color: $cyan-strong;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $cyan-strong;
+  }
+}
+
+.custom {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: right;
+  color: $cyan-very-dark;
+  padding: 4px;
+  border: none;
+  background-color: $cyan-light-grayish2;
+  border-radius: 8px;
+  &::placeholder {
+    color: $cyan-dark-grayish;
+    text-align: center;
+  }
+
+  &:focus {
+    outline-color: $cyan-strong;
+  }
+}
