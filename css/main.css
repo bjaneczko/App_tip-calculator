@@ -1,3 +1,7 @@
+:root {
+  --some-color: hsl(172, 67%, 45%);
+}
+
 *::before,
 *::after,
 * {
@@ -88,7 +92,7 @@ body {
 
 .calculator {
   background-color: white;
-  width: auto;
+  min-width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,10 +152,10 @@ body {
   color: #7f9c9f;
 }
 .input:focus {
-  outline-color: #26c0ab;
+  outline-color: var(--some-color);
 }
 .input--alert {
-  border: 2px solid red;
+  border: none;
 }
 
 .right-side {

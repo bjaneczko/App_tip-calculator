@@ -37,6 +37,7 @@
                 class="input"
                 type="number"
                 placeholder="0"
+                max="1000000"
               />
             </div>
 
@@ -52,7 +53,9 @@
             <div class="input-container">
               <div class="text-container">
                 <p class="text" for="people">Number of People</p>
-                <p class="text text--alert hide" for="people">Can't be zero</p>
+                <p id="alertText" class="text text--alert hide" for="people">
+                  Can't be zero
+                </p>
               </div>
               <img src="images/icon-person.svg" class="icon" alt="" />
               <input
@@ -90,7 +93,7 @@
               </div>
             </div>
           </div>
-          <button class="btn btn--reset">RESET</button>
+          <button id="resetBtn" class="btn btn--reset">RESET</button>
         </div>
       </main>
       <div class="attribution">

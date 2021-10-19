@@ -8,6 +8,10 @@ $cyan-light-grayish: hsl(185, 41%, 84%);
 $cyan-light-grayish2: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
 
+:root {
+  --some-color: hsl(172, 67%, 45%);
+}
+
 *::before,
 *::after,
 * {
