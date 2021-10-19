@@ -51,6 +51,9 @@ body {
 .text--small {
   font-size: 16px;
 }
+.text--alert {
+  color: red;
+}
 
 .text2 {
   font-family: "Space Mono", sans-serif;
@@ -85,7 +88,7 @@ body {
 
 .calculator {
   background-color: white;
-  min-width: 77vw;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +150,9 @@ body {
 .input:focus {
   outline-color: #26c0ab;
 }
+.input--alert {
+  border: 2px solid red;
+}
 
 .right-side {
   background-color: #00494d;
@@ -181,8 +187,9 @@ body {
 
 .icon {
   position: absolute;
+  width: 15px;
   left: 15px;
-  top: 42px;
+  top: 50px;
   z-index: 10;
 }
 
@@ -293,4 +300,17 @@ body {
 }
 .custom:focus {
   outline-color: #26c0ab;
+}
+
+.text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hide {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

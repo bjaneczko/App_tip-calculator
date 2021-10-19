@@ -1,6 +1,6 @@
 .calculator {
   background-color: $white;
-  min-width: 77vw;
+  width: auto;
   display: flex;
   border-radius: 25px;
   overflow: hidden;
@@ -38,6 +38,10 @@
   &:focus {
     outline-color: $cyan-strong;
   }
+
+  &--alert {
+    border: 2px solid red;
+  }
 }
 
 .right-side {
@@ -63,8 +67,9 @@
 
 .icon {
   position: absolute;
+  width: 15px;
   left: 15px;
-  top: 42px;
+  top: 50px;
   z-index: 10;
 }
 
@@ -146,4 +151,13 @@
   &:focus {
     outline-color: $cyan-strong;
   }
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide {
+  opacity: 0;
 }

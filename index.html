@@ -27,26 +27,43 @@
       <img src="images/logo.svg" alt="Logo" class="margin-bottom-large" />
       <main class="calculator margin-bottom-large">
         <div class="left-side">
-          <div class="input-container margin-bottom-medium">
-            <label class="text" for="bill">Bill</label>
-            <img src="images/icon-dollar.svg" class="icon" alt="" />
-            <input name="bill" class="input" type="text" placeholder="0" />
-          </div>
+          <form>
+            <div class="input-container margin-bottom-medium">
+              <p class="text">Bill</p>
+              <img src="images/icon-dollar.svg" class="icon" alt="" />
+              <input
+                id="bill"
+                name="bill"
+                class="input"
+                type="number"
+                placeholder="0"
+              />
+            </div>
 
-          <p class="text margin-bottom-small">Select tip %</p>
-          <div class="tips margin-bottom-medium">
-            <button class="btn btn--tip">5%</button>
-            <button class="btn btn--tip">10%</button>
-            <button class="btn btn--tip">15%</button>
-            <button class="btn btn--tip">25%</button>
-            <button class="btn btn--tip">50%</button>
-            <input type="text" class="custom" placeholder="Custom" />
-          </div>
-          <div class="input-container">
-            <label class="text" for="people">Number of People</label>
-            <img src="images/icon-person.svg" class="icon" alt="" />
-            <input name="people" class="input" type="text" placeholder="0" />
-          </div>
+            <p class="text margin-bottom-small">Select tip %</p>
+            <div class="tips margin-bottom-medium">
+              <button id="5" class="btn btn--tip">5%</button>
+              <button id="10" class="btn btn--tip">10%</button>
+              <button id="15" class="btn btn--tip">15%</button>
+              <button id="25" class="btn btn--tip">25%</button>
+              <button id="50" class="btn btn--tip">50%</button>
+              <input type="number" class="custom" placeholder="Custom" />
+            </div>
+            <div class="input-container">
+              <div class="text-container">
+                <p class="text" for="people">Number of People</p>
+                <p class="text text--alert hide" for="people">Can't be zero</p>
+              </div>
+              <img src="images/icon-person.svg" class="icon" alt="" />
+              <input
+                id="numPeople"
+                name="people"
+                class="input"
+                type="number"
+                placeholder="0"
+              />
+            </div>
+          </form>
         </div>
         <div class="right-side">
           <div class="result">
@@ -58,7 +75,7 @@
               </p>
               <div class="number">
                 <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p class="text2">$0.00</p>
+                <p id="tipAmount" class="text2">$0.00</p>
               </div>
             </div>
             <div class="result__amount">
@@ -69,7 +86,7 @@
               </p>
               <div class="number">
                 <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p class="text2">$0.00</p>
+                <p id="totalAmount" class="text2">$0.00</p>
               </div>
             </div>
           </div>
@@ -83,5 +100,6 @@
         >. Coded by <a href="#">Bartłomiej Janeczko</a>.
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
