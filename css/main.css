@@ -1,7 +1,3 @@
-:root {
-  --some-color: hsl(172, 67%, 45%);
-}
-
 *::before,
 *::after,
 * {
@@ -18,4 +14,132 @@ html {
 body {
   font-family: "Space Mono", sans-serif;
   background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  padding: 5rem 0 5rem 0;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2.5rem;
+}
+
+.left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 2.5rem;
+  gap: 2rem;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.input-container .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.input-container .label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #5e7a7d;
+  margin-bottom: 0.5rem;
+}
+.input-container .label--alert {
+  color: red;
+}
+.input-container .input-wrapper {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.input-container .input {
+  width: 100%;
+  background-color: #f4fafa;
+  border-radius: 0.5rem;
+  color: #00494d;
+  padding: 0.5rem 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: inherit;
+  text-align: right;
+  border: none;
+}
+.input-container .input:focus {
+  outline: 2px solid #26c0ab;
+}
+.input-container .icon {
+  position: absolute;
+  left: 2.5rem;
+}
+.input-container .btn-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding-top: 1.2rem;
+}
+.input-container .btn-wrapper .btn {
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #00494d;
+  color: white;
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.input-container .btn-wrapper .btn:focus {
+  background-color: #26c0ab;
+}
+.input-container .right-side {
+  background-color: #00494d;
 }/*# sourceMappingURL=main.css.map */
