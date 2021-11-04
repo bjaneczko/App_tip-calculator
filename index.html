@@ -22,55 +22,70 @@
   </head>
   <body>
     <div class="container">
-      <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-      person Total / person Reset -->
-      <img src="images/logo.svg" alt="Logo" class="margin-bottom-large" />
-      <main class="calculator margin-bottom-large">
-        <div class="left-side">
-          <form>
-            <div class="input-container margin-bottom-medium">
-              <p class="text">Bill</p>
-              <img src="images/icon-dollar.svg" class="icon" alt="" />
-              <input
-                id="bill"
-                name="bill"
-                class="input"
-                type="number"
-                placeholder="0"
-                max="1000000"
-              />
-            </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo" />
+      </div>
 
-            <p class="text margin-bottom-small">Select tip %</p>
-            <div class="tips margin-bottom-medium">
-              <button id="5" class="btn btn--tip">5%</button>
-              <button id="10" class="btn btn--tip">10%</button>
-              <button id="15" class="btn btn--tip">15%</button>
-              <button id="25" class="btn btn--tip">25%</button>
-              <button id="50" class="btn btn--tip">50%</button>
-              <input type="number" class="custom" placeholder="Custom" />
+      <main class="card">
+        <div class="left-side">
+          <div class="input-container">
+            <p class="text">Bill</p>
+            <img src="images/icon-dollar.svg" class="icon" alt="" />
+            <input
+              id="bill"
+              name="bill"
+              class="input"
+              type="number"
+              placeholder="0"
+              max="1000000"
+            />
+          </div>
+
+          <p class="text">Select tip %</p>
+          <div class="buttons-container">
+            <button id="5" class="btn btn--tip" onclick="changePercent(5)">
+              5%
+            </button>
+            <button id="10" class="btn btn--tip" onclick="changePercent(10)">
+              10%
+            </button>
+            <button id="15" class="btn btn--tip" onclick="changePercent(15)">
+              15%
+            </button>
+            <button id="25" class="btn btn--tip" onclick="changePercent(25)">
+              25%
+            </button>
+            <button id="50" class="btn btn--tip" onclick="changePercent(50)">
+              50%
+            </button>
+            <input
+              id="custom"
+              type="number"
+              class="custom"
+              placeholder="Custom"
+              onclick="changePercent(Number(custom.value))"
+            />
+          </div>
+          <div class="input-container">
+            <div class="text-container">
+              <p class="text" for="people">Number of People</p>
+              <p id="textAlert" class="text text--alert hide" for="people">
+                Can't be zero
+              </p>
             </div>
-            <div class="input-container">
-              <div class="text-container">
-                <p class="text" for="people">Number of People</p>
-                <p id="alertText" class="text text--alert hide" for="people">
-                  Can't be zero
-                </p>
-              </div>
-              <img src="images/icon-person.svg" class="icon" alt="" />
-              <input
-                id="numPeople"
-                name="people"
-                class="input"
-                type="number"
-                placeholder="0"
-              />
-            </div>
-          </form>
+            <img src="images/icon-person.svg" class="icon" alt="" />
+            <input
+              id="numPeople"
+              name="people"
+              class="input"
+              type="number"
+              placeholder="0"
+            />
+          </div>
         </div>
         <div class="right-side">
           <div class="result">
-            <div class="result__amount margin-bottom-small">
+            <div class="result__amount">
               <p class="text text--white">
                 Tip Amount
                 <br />
@@ -78,7 +93,7 @@
               </p>
               <div class="number">
                 <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p id="tipAmount" class="text2">$0.00</p>
+                <p id="tip" class="text2">$0.00</p>
               </div>
             </div>
             <div class="result__amount">
@@ -89,7 +104,7 @@
               </p>
               <div class="number">
                 <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p id="totalAmount" class="text2">$0.00</p>
+                <p id="total" class="text2">$0.00</p>
               </div>
             </div>
           </div>
