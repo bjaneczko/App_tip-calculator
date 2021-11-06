@@ -60,7 +60,7 @@
               <input
                 id="input-custom"
                 type="number"
-                class="input"
+                class="input input--custom"
                 placeholder="Custom"
               />
             </div>
@@ -73,6 +73,7 @@
                 Can't be zero
               </p>
             </div>
+
             <div class="input-wrapper">
               <img src="images/icon-person.svg" class="icon" alt="" />
 
@@ -88,31 +89,24 @@
         </div>
 
         <div class="right-side">
-          <div class="result">
-            <div class="result__amount">
-              <p class="text text--white">
-                Tip Amount
-                <br />
-                <span class="text text--small">/ person</span>
-              </p>
-              <div class="number">
-                <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p id="tip" class="text2">$0.00</p>
+          <div class="result-container">
+            <div class="result">
+              <div class="result__text">
+                <p class="result__text--primary">Tip Amount</p>
+                <p class="result__text--secondary">/ person</p>
               </div>
+              <p class="result__output">$4.28</p>
             </div>
-            <div class="result__amount">
-              <p class="text text--white">
-                Total
-                <br />
-                <span class="text text--small">/ person</span>
-              </p>
-              <div class="number">
-                <!-- <img src="/images/icon-dollar.svg" alt="" class="icon2" /> -->
-                <p id="total" class="text2">$0.00</p>
+
+            <div class="result">
+              <div class="result__text">
+                <p class="result__text--primary">Total</p>
+                <p class="result__text--secondary">/ person</p>
               </div>
+              <p class="result__output">$32.79</p>
             </div>
           </div>
-          <button id="resetBtn" class="btn btn--reset">RESET</button>
+          <button class="btn btn--reset">RESET</button>
         </div>
       </main>
 
