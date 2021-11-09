@@ -1,8 +1,9 @@
 'use strict';
 
 //// Expresions
+
 const bill = document.getElementById('bill'); //// Functionality
-const tipBtns = document.querySelectorAll('btn--tip');
+const tipBtns = document.querySelectorAll('.btn--tip');
 const custom = document.getElementById('custom');
 const people = document.getElementById('people');
 const alert = document.querySelector('.label--alert');
@@ -20,6 +21,8 @@ bill.addEventListener('input', setBillValue);
 tipBtns.forEach(btn => {
   btn.addEventListener('click', handleClick);
 });
+custom.addEventListener('input', setTipCustomValue);
+people.addEventListener('input', setPeopleValue);
 resetBtn.addEventListener('click', reset);
 
 //// Functions
@@ -39,7 +42,6 @@ function handleClick(event) {
   tipBtns.forEach(btn => {
     //clear active state
     btn.classList.remove('btn--active');
-    console.log('class removed');
 
     //set active state
     if (event.target.innerHTML == btn.innerHTML) {
@@ -53,10 +55,46 @@ function handleClick(event) {
 
   calculateTip();
 
-  //console.log(tipValue);
+  console.log(tipValue);
 }
 
-function calculateTip() {}
+function setTipCustomValue() {
+  tipValue = parseFloat(custom.value / 100);
+
+  //clear active state from btns
+  tipBtns.forEach(btn => {
+    btn.classList.remove('btn--active');
+  });
+
+  if (custom.value !== '') {
+    calculateTip();
+  }
+
+  console.log(tipValue);
+}
+
+function setPeopleValue() {
+  peopleValue = parseFloat(people.value);
+
+  if (peopleValue <= 0) {
+    alert.classList.add('show-alert');
+    people.classList.add('input--alert');
+    setTimeout(function () {
+      alert.classList.remove('show-alert');
+      people.classList.remove('input--alert');
+    }, 3000);
+  }
+
+  calculateTip();
+}
+
+function calculateTip() {
+  let tipTotal = (billValue * tipValue) / peopleValue;
+  let billTotal = (billValue + tipTotal) / peopleValue;
+
+  results[0].innerHTML = `$${tipTotal.toFixed(2)}`;
+  results[1].innerHTML = `$${billTotal.toFixed(2)}`;
+}
 
 function reset() {
   bill.value = '0';

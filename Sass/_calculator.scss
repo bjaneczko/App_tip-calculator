@@ -43,7 +43,13 @@
 
   &--alert {
     color: red;
+    opacity: 0;
   }
+}
+
+.show-alert {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
 }
 
 .input-wrapper {
@@ -72,6 +78,11 @@
   &--custom {
     text-align: center;
     padding: 0.5rem 0rem;
+  }
+
+  &--alert {
+    outline: none;
+    border: 1px solid red;
   }
 }
 
