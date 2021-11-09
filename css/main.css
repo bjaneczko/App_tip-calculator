@@ -148,14 +148,25 @@ body {
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.btn:focus {
+.btn:hover {
   background-color: #26c0ab;
+  color: #00494d;
+}
+.btn--active {
+  background-color: #26c0ab;
+  color: #00494d;
 }
 .btn--reset {
   font-size: 2rem;
   padding: 1rem;
   background-color: #0d686d;
   color: #00494d;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn--reset:hover {
+  background-color: #26c0ab;
 }
 
 .right-side {

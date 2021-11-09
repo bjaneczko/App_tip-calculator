@@ -98,8 +98,14 @@
   padding: 0.5rem;
   transition: all 0.3s ease-in;
 
-  &:focus {
+  &:hover {
     background-color: $cyan-strong;
+    color: $cyan-very-dark;
+  }
+
+  &--active {
+    background-color: $cyan-strong;
+    color: $cyan-very-dark;
   }
 
   &--reset {
@@ -107,6 +113,11 @@
     padding: 1rem;
     background-color: #0d686d;
     color: $cyan-very-dark;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $cyan-strong;
+    }
   }
 }
 
