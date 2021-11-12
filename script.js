@@ -78,7 +78,7 @@ function setPeopleValue() {
 
   if (peopleValue <= 0) {
     alert.classList.add('show-alert');
-    people.style.outlineColor = '#FF5733';
+    people.style.outlineColor = '#FF0000';
     setTimeout(function () {
       alert.classList.remove('show-alert');
       people.style.outlineColor = 'hsl(172, 67%, 45%)';
