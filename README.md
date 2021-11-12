@@ -28,8 +28,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://github.com/bjaneczko/App_tip-calculator)
-- Live Site URL: [Add live site URL here](https://github.com/bjaneczko/App_tip-calculator/deployments/activity_log?environment=github-pages)
+- Solution URL: [SOLUTION](https://github.com/bjaneczko/App_tip-calculator)
+- Live Site URL: [LIVE SITE](https://github.com/bjaneczko/App_tip-calculator/deployments/activity_log?environment=github-pages)
 
 ## Built with
 
