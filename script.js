@@ -78,11 +78,11 @@ function setPeopleValue() {
 
   if (peopleValue <= 0) {
     alert.classList.add('show-alert');
-    people.classList.add('input--alert');
+    people.style.outlineColor = '#FF5733';
     setTimeout(function () {
       alert.classList.remove('show-alert');
-      people.classList.remove('input--alert');
-    }, 3000);
+      people.style.outlineColor = 'hsl(172, 67%, 45%)';
+    }, 5000);
   }
 
   calculateTip();

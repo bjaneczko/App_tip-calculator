@@ -131,10 +131,6 @@ body {
   text-align: center;
   padding: 0.5rem 0rem;
 }
-.input--alert {
-  outline: none;
-  border: 1px solid red;
-}
 
 .icon {
   position: absolute;
