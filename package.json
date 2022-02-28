@@ -1,6 +1,6 @@
 {
   "author": "Bartlomiej Janeczko",
-  "name": "@bjaneczko-tip-calculator",
+  "name": "tipcalculator",
   "version": "2.0",
   "description": "Tip Calculator Frontend mentor challenge made with HTML, SCSS, JavaScript",
   "homepage": "https://github.com/bjaneczko/App_tip-calculator#readme",
