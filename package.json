@@ -15,8 +15,7 @@
   "contributors": [
     {
       "name": "Bartlomiej Janeczko",
-      "email": "janeczko.bartlomiej@gmail.com",
-      "url": ""
+      "email": "janeczko.bartlomiej@gmail.com"
     }
   ],
   "devDependencies": {
