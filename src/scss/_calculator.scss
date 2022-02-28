@@ -9,7 +9,7 @@
   padding: 5rem 0 5rem 0;
 }
 
-.card {
+.app {
   width: 100%;
   background-color: $white;
   display: flex;
@@ -121,10 +121,6 @@
     background-color: #0d686d;
     color: $cyan-very-dark;
     transition: all 0.3s;
-
-    &:hover {
-      background-color: $cyan-strong;
-    }
   }
 }
 
@@ -173,8 +169,21 @@
   }
 }
 
-@media screen and (min-width: 600px) {
-  .card {
+// Removing arrows from inputs
+// Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Firefox
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@include tablet {
+  .app {
     width: 600px;
   }
   .btn-wrapper {
@@ -182,8 +191,8 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .card {
+@include desktop {
+  .app {
     width: 1000px;
     display: flex;
     flex-direction: row;
@@ -198,17 +207,4 @@
     width: 50%;
     justify-content: space-between;
   }
-}
-
-// Removing arrows from inputs
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type='number'] {
-  -moz-appearance: textfield;
 }

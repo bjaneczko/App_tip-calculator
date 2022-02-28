@@ -1,12 +1,22 @@
-// Colors
+/**
+ * Variables
+*/
 
+/* Typography */
+/* Breakpoints */
+$tablet-width: 600px;
+$desktop-width: 1000px;
+/* Paths */
+/* Grid setup */
+/* Colour palette */
 $cyan-strong: hsl(172, 67%, 45%);
+$cyan-dark: hsl(183, 79%, 24%);
 $cyan-very-dark: hsl(183, 100%, 15%);
 $cyan-grayish-dark: hsl(186, 14%, 43%);
 $cyan-grayish-dark2: hsl(184, 14%, 56%);
 $cyan-grayish-light: hsl(185, 41%, 84%);
 $cyan-grayish-light2: hsl(189, 41%, 97%);
 $white: hsl(0, 0%, 100%);
+$alert: hsl(15, 100%, 40%);
 
-@import 'base';
-@import 'calculator';
+/* Components */
